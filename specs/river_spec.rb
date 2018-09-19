@@ -10,6 +10,8 @@ class TestRiver < MiniTest::Test
     @till = River.new("Till")
     @spey = River.new("Spey")
     @spey.add_fish(:salmon, 10)
+    salmon = Fish.new(:salmon)
+    seatrout = Fish.new(:seatrout)
   end
 
   def test_river_name
