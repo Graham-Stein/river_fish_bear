@@ -1,12 +1,15 @@
 require("minitest/autorun")
 require("minitest/rg")
 require_relative("../river.rb")
+require_relative("../fish.rb")
 
 class TestRiver < MiniTest::Test
 
   def setup()
     @teith = River.new("Teith")
     @till = River.new("Till")
+    @spey = River.new("Spey")
+    @spey.add_fish(:salmon, 10)
   end
 
   def test_river_name
